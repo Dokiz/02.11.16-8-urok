@@ -14,13 +14,11 @@ var PeopleCollection = Backbone.Collection.extend({
 });
 //вид списка людей
 var peopView = Beckbone.View.extend({
-	tagName: 'ul',
-	
+	tagName: 'ul',	
 	initialize: function() {
 		console.log();
 	};
 });
-
 //вид одного человека
 var PersonView = Backbone.View.extend(
     {
@@ -38,13 +36,10 @@ var PersonView = Backbone.View.extend(
         }
     }
 );
-
-
 var per = [{
     name: 'Lolo',
     age: 53,
     job: 'coder',
-
 },
     {
         name: 'Mitri',
