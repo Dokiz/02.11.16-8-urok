@@ -22,18 +22,11 @@ var PersonView = Backbone.View.extend({
     },
 
     render: function() {
-       // this.$el.html(this.template(this.model.toJSON()) + this.mytemplate(this.model.toJSON()));
+       
         this.$el.html(this.template(this.model.toJSON())+this.mytemplate(this.model.toJSON()));
-        //this.$el.html(this.mytemplate(this.model.toJSON()));
         $(document.body).append(this.el);
     }
 });
 
 var person = new Person;
 var personView = new PersonView({model: person});
-
-//CONSOLE COMMANDS
-//personView;
-//personView.el;
-//personView.render();
-//personView.el;
